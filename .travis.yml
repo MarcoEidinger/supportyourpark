@@ -1,0 +1,5 @@
+language: swift
+osx_image: xcode11.3
+xcode_project: supportyourpark.xcodeproj # path to your xcodeproj folder
+xcode_scheme: supportyourpark
+xcode_destination: platform=iOS Simulator,name=iPhone 11,OS=13.3
