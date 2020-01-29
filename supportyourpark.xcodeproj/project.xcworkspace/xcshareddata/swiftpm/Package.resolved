@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "NatParkSwiftKit",
+        "repositoryURL": "https://github.com/MarcoEidinger/npsapi-swift",
+        "state": {
+          "branch": null,
+          "revision": "239451f2e6eebeba565335e9d10044cdbfc52210",
+          "version": null
+        }
+      },
+      {
+        "package": "URLImage",
+        "repositoryURL": "https://github.com/dmytro-anokhin/url-image",
+        "state": {
+          "branch": null,
+          "revision": "5d3a5dc84f9bdf948d8b136f7a1b0099af68f114",
+          "version": "0.9.9"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
