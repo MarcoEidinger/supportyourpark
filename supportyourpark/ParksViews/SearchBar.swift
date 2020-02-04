@@ -1,15 +1,13 @@
 import Foundation
 import SwiftUI
 
-struct SearchBar : UIViewRepresentable {
+struct SearchBar: UIViewRepresentable {
 
-    @Binding var text : String
+    class Cordinator: NSObject, UISearchBarDelegate {
 
-    class Cordinator : NSObject, UISearchBarDelegate {
+        @Binding var text: String
 
-        @Binding var text : String
-
-        init(text : Binding<String>) {
+        init(text: Binding<String>) {
             _text = text
         }
 
@@ -17,6 +15,8 @@ struct SearchBar : UIViewRepresentable {
             text = searchText
         }
     }
+
+    @Binding var text: String
 
     func makeCoordinator() -> SearchBar.Cordinator {
         return Cordinator(text: $text)

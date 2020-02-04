@@ -10,6 +10,48 @@ struct Parks: Decodable {
     let data: [NatParkSwiftKit.Park]
 }
 
+struct Simple: Decodable {
+    let name: String
+    let url: String
+}
+
+func loadDonationOptionsFromFile() -> [String: [DonationOption]] {
+    let data: Data
+
+    guard let file = Bundle.main.url(forResource: "parkDonationOptions.json", withExtension: nil)
+    else {
+        fatalError("Couldn't find parks.json in main bundle.")
+    }
+
+    do {
+        data = try Data(contentsOf: file)
+    } catch {
+        fatalError("Couldn't load parks.json from main bundle:\n\(error)")
+    }
+
+    do {
+        var parkDonationOptionMap: [String: [DonationOption]] = [:]
+        let decoder = JSONDecoder()
+        let parkDonationJSON = try decoder.decode([String:[Simple]].self, from: data)
+//        guard let parkDonationJSON = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions()) as? [String: Any] else {
+//            return [:]
+//        }
+        for keys in parkDonationJSON {
+            let parkCode = keys.key
+//            guard let options = keys.value else {
+//                continue
+//            }
+            let donationOptions = keys.value.enumerated().map { (index, element) in
+                return DonationOption(id: index, name: element.name, webLink: URL(string: element.url)!)
+            }
+            parkDonationOptionMap[parkCode] = donationOptions
+        }
+        return parkDonationOptionMap
+    } catch {
+        fatalError("Couldn't parse parks.json as Parks:\n\(error)")
+    }
+}
+
 func loadLocalParksFromFile() -> [Park] {
     let data: Data
 
@@ -36,37 +78,3 @@ func loadLocalParksFromFile() -> [Park] {
         fatalError("Couldn't parse parks.json as Parks:\n\(error)")
     }
 }
-
-final class ImageStore {
-    typealias _ImageDictionary = [String: CGImage]
-    fileprivate var images: _ImageDictionary = [:]
-
-    fileprivate static var scale = 2
-    
-    static var shared = ImageStore()
-    
-    func image(name: String) -> Image {
-        let index = _guaranteeImage(name: name)
-        
-        return Image(images.values[index], scale: CGFloat(ImageStore.scale), label: Text(name))
-    }
-
-    static func loadImage(name: String) -> CGImage {
-        guard
-            let url = Bundle.main.url(forResource: name, withExtension: "jpg"),
-            let imageSource = CGImageSourceCreateWithURL(url as NSURL, nil),
-            let image = CGImageSourceCreateImageAtIndex(imageSource, 0, nil)
-        else {
-            fatalError("Couldn't load image \(name).jpg from main bundle.")
-        }
-        return image
-    }
-    
-    fileprivate func _guaranteeImage(name: String) -> _ImageDictionary.Index {
-        if let index = images.index(forKey: name) { return index }
-        
-        images[name] = ImageStore.loadImage(name: name)
-        return images.index(forKey: name)!
-    }
-}
-

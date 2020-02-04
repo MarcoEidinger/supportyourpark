@@ -10,35 +10,26 @@ struct ParkDetail: View {
 
     var body: some View {
         VStack {
-            MapView(coordinate: park.locationCoordinate)
-                .edgesIgnoringSafeArea(.top)
-                .frame(height: 200)
-            
-            CircleImage(image: park.image)
-                .offset(x: 0, y: -130)
-                .padding(.bottom, -130)
-            
+            if park.locationCoordinate != nil {
+                MapView(coordinate: park.locationCoordinate!)
+                    .edgesIgnoringSafeArea(.top)
+                    .frame(height: 200)
+            }
+
+            if park.imageURL != nil {
+                CircleImage(imageURL: park.imageURL)
+                    .offset(x: 0, y: -130)
+                    .padding(.bottom, -130)
+            }
+
             VStack(alignment: .leading) {
                 HStack {
                     Text(park.name)
                         .font(.title)
-                    
-                    Button(action: {
-                        self.userData.parks[self.parkIndex]
-                            .isFavorite.toggle()
-                    }) {
-                        if self.userData.parks[self.parkIndex].isFavorite {
-                            Image(systemName: "star.fill")
-                                .foregroundColor(Color.yellow)
-                        } else {
-                            Image(systemName: "star")
-                                .foregroundColor(Color.gray)
-                        }
-                    }
                 }
                 
                 HStack(alignment: .top) {
-                    Text(park.park)
+                    Text(park.designation.rawValue)
                         .font(.subheadline)
                     Spacer()
                     Text(park.state)
@@ -46,8 +37,12 @@ struct ParkDetail: View {
                 }
 
                 Text(park.description)
-                .font(.subheadline)
-                .padding()
+                    .font(.subheadline)
+                    .padding()
+
+                ForEach(park.donationOptions) { option in
+                    ParkDonationButton(model: option)
+                }
             }
             .padding()
             

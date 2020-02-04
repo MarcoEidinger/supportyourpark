@@ -4,16 +4,25 @@ struct Home: View {
 
     @EnvironmentObject var userData: UserData
 
+    @State private var selectedPlace: Park?
+    @State private var showingPlaceDetails = false
+
     var body: some View {
         TabView {
             FeaturedParks().environmentObject(userData)
                 .tabItem {
-                    Image(systemName: "1.circle")
+                    Image(systemName: "photo.on.rectangle")
                     Text("Parks")
                 }.tag(0)
-            Text("HelloWorld")
+            
+            GlobalMap(selectedPlace: $selectedPlace, showingPlaceDetails: $showingPlaceDetails).environmentObject(userData)
+                .sheet(isPresented: $showingPlaceDetails, content: {
+                    ParkDetail(
+                        park: self.selectedPlace!
+                    )
+                })
                 .tabItem {
-                    Image(systemName: "2.circle")
+                    Image(systemName: "map")
                     Text("Map")
                 }.tag(1)
         }

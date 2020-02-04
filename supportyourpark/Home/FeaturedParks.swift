@@ -18,11 +18,6 @@ struct FeaturedParks: View {
     var body: some View {
         NavigationView {
             List {
-                FeaturedParkImage(parks: featured)
-                    .scaledToFill()
-                    .frame(height: 200)
-                    .clipped()
-                    .listRowInsets(EdgeInsets())
 
                 ForEach(categories.keys.sorted(), id: \.self) { key in
                     CategoryRow(categoryName: key, items: self.categories[key]!)
@@ -38,17 +33,9 @@ struct FeaturedParks: View {
     }
 }
 
-struct FeaturedParkImage: View {
-    var parks: [Park]
-    var body: some View {
-        parks.first?.image.resizable()
-    }
-}
-
 struct FeaturedParks_Previews: PreviewProvider {
     static var previews: some View {
         FeaturedParks()
             .environmentObject(UserData())
     }
 }
-

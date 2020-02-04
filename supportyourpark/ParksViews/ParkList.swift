@@ -1,39 +1,60 @@
 import SwiftUI
 
+extension Array where Element: Hashable {
+    func removingDuplicates() -> [Element] {
+        var addedDict = [Element: Bool]()
+
+        return filter {
+            addedDict.updateValue(true, forKey: $0) == nil
+        }
+    }
+
+    mutating func removeDuplicates() {
+        self = self.removingDuplicates()
+    }
+}
+
 struct ParkList: View {
     @EnvironmentObject private var userData: UserData
-    @State private var searchTerm : String = ""
+    @State private var searchTerm: String = ""
     
     var body: some View {
-        VStack {
+
+        let filteredParks = self.userData.parks.filter {
+            if self.searchTerm.isEmpty {
+                return true
+            } else {
+                return $0.name.contains(self.searchTerm)
+            }
+        }
+        let statesOfFilteredParks = filteredParks.map { $0.state }.filter { !$0.isEmpty }.removingDuplicates().sorted()
+
+        return VStack {
             SearchBar(text: $searchTerm)
 
             List {
 
-                Toggle(isOn: $userData.showFavoritesOnly) {
-                    Text("Show Favorites Only")
-                }
+                ForEach(statesOfFilteredParks, id: \.self) { item in
 
-                ForEach(userData.parks.filter {
-                    if searchTerm.isEmpty {
-                        return true
-                    } else {
-                        return $0.name.contains(searchTerm)
-                    }
-
-                }) { park in
-                    if !self.userData.showFavoritesOnly || park.isFavorite {
-                        NavigationLink(
-                            destination: ParkDetail(park: park)
-                        ) {
-                            ParkRow(park: park)
+                    Section(header: Text(item)) {
+                        ForEach(filteredParks.filter {
+                            if self.searchTerm.isEmpty {
+                                return $0.state == item
+                            } else {
+                                return $0.state == item && $0.name.contains(self.searchTerm)
+                            }
+                        }) { park in
+                            NavigationLink(
+                                destination: ParkDetail(park: park)
+                            ) {
+                                ParkRow(park: park)
+                            }
                         }
                     }
                 }
             }
             .navigationBarTitle(Text("Parks"))
         }
-
     }
 }
 

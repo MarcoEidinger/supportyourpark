@@ -23,13 +23,36 @@ class supportyourparkUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // UI tests must launch the application that they test.
+    func testNavigateFromHomeToParkDetails() {
         let app = XCUIApplication()
         app.launch()
 
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        app.tables/*@START_MENU_TOKEN@*/.scrollViews/*[[".cells.scrollViews",".scrollViews"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.otherElements.buttons["Arches"].tap()
+        app.navigationBars.firstMatch.buttons["Featured"].tap()
+
+        let tablesQuery = XCUIApplication().tables
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Others"]/*[[".cells.staticTexts[\"Others\"]",".staticTexts[\"Others\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.swipeUp()
+        tablesQuery/*@START_MENU_TOKEN@*/.buttons["See All"]/*[[".cells.buttons[\"See All\"]",".buttons[\"See All\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+    }
+
+    func testNavigateFromHomeToMap() {
+        let app = XCUIApplication()
+        app.launch()
+
+        addUIInterruptionMonitor(withDescription: "Allow “supportyourpark” to access your location?") {
+          (alert) -> Bool in
+            let okButton = alert.buttons["Allow While Using App"]
+            if okButton.exists {
+              okButton.tap()
+            }
+          return true
+        }
+
+        XCUIApplication().tabBars.buttons["Map"].tap()
+        //XCTAssertTrue(app.alerts["Warning"].waitForExistence(timeout: 1))
+        //XCUIApplication().alerts["Allow “supportyourpark” to access your location?"].scrollViews.otherElements.buttons["Allow While Using App"].tap()
+        XCUIApplication().tabBars.buttons["Parks"].tap()
+
     }
 
     func testLaunchPerformance() {

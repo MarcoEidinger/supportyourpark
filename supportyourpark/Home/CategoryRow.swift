@@ -35,23 +35,19 @@ struct CategoryItem: View {
     var body: some View {
         VStack(alignment: .leading) {
             if park.imageURL != nil {
+                // swiftlint:disable:next force_unwrapping
                 URLImage(park.imageURL!,
-                    delay: 0.10,
-                    processors: [ Resize(size: CGSize(width: 50.0, height: 50.0), scale: UIScreen.main.scale) ],
-                    content:  {
-                        $0.image
-                        .renderingMode(.original)
-                        .resizable()
-                        .frame(width: 155, height: 155)
-                        .cornerRadius(5)
-                    })
-                .frame(width: 155.0, height: 155.0)
+                         delay: 0.10,
+                         processors: [ Resize(size: CGSize(width: 155.0, height: 155.0), scale: UIScreen.main.scale) ],
+                         content: {
+                            $0.image
+                                .renderingMode(.original)
+                                .resizable()
+                                .frame(width: 155, height: 155)
+                                .cornerRadius(5)
+                })
+                    .frame(width: 155.0, height: 155.0)
             }
-//            park.image
-//                .renderingMode(.original)
-//                .resizable()
-//                .frame(width: 155, height: 155)
-//                .cornerRadius(5)
             Text(park.name)
                 .foregroundColor(.primary)
                 .font(.caption)
@@ -66,6 +62,6 @@ struct CategoryRow_Previews: PreviewProvider {
             categoryName: localParkData[0].category.rawValue,
             items: Array(localParkData.prefix(4))
         )
-        .environmentObject(UserData())
+            .environmentObject(UserData())
     }
 }

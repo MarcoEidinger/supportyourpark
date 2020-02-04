@@ -1,12 +1,25 @@
 import SwiftUI
 import UIKit
 
+struct WelcomeView: View {
+    var body: some View {
+        VStack {
+            PageView([WelcomeCard(), WelcomeCard()]).aspectRatio(3 / 2, contentMode: .fit).background(Color.black)
+            Button(action: {
+                print("Done")
+            }) {
+                Text("Press me")
+            }
+        }
+    }
+}
+
 struct WelcomeCard: View {
     var body: some View {
-        ZStack {
-            Text("Hello World").foregroundColor(.black)
-            Color.red
-        }
+        Image("TestMeep")
+            .resizable()
+//            .aspectRatio(3 / 2, contentMode: .fit)
+            .overlay(TextOverlayText())
     }
 }
 

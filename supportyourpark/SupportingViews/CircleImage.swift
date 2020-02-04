@@ -1,18 +1,18 @@
 import SwiftUI
+import URLImage
 
 struct CircleImage: View {
-    var image: Image
-
+    var imageURL: URL?
+    
     var body: some View {
-        image
-            .clipShape(Circle())
-            .overlay(Circle().stroke(Color.white, lineWidth: 4))
-            .shadow(radius: 10)
-    }
-}
-
-struct CircleImage_Previews: PreviewProvider {
-    static var previews: some View {
-        CircleImage(image: Image("turtlerock"))
+        URLImage(imageURL!,
+                 delay: 0.10,
+                 processors: [ Resize(size: CGSize(width: 75.0, height: 75.0), scale: UIScreen.main.scale) ],
+                 content: {
+                    $0.image
+                        .clipShape(Circle())
+                        .overlay(Circle().stroke(Color.white, lineWidth: 4))
+                        .shadow(radius: 10)
+        })
     }
 }
