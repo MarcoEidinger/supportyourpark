@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A5274CB23EE0C2800B10C45 /* LocalImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5274CA23EE0C2800B10C45 /* LocalImage.swift */; };
+		8A5274DC23EE1C3A00B10C45 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A5274CD23EE1C3A00B10C45 /* Icon.png */; };
+		8A5274DD23EE1C3A00B10C45 /* icon_40pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A5274CE23EE1C3A00B10C45 /* icon_40pt.png */; };
+		8A5274DE23EE1C3A00B10C45 /* icon_20pt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A5274CF23EE1C3A00B10C45 /* icon_20pt@2x.png */; };
+		8A5274DF23EE1C3A00B10C45 /* icon_40pt@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A5274D023EE1C3A00B10C45 /* icon_40pt@3x.png */; };
+		8A5274E023EE1C3A00B10C45 /* icon_40pt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A5274D123EE1C3A00B10C45 /* icon_40pt@2x.png */; };
+		8A5274E123EE1C3A00B10C45 /* icon_20pt@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A5274D223EE1C3A00B10C45 /* icon_20pt@3x.png */; };
+		8A5274E223EE1C3A00B10C45 /* icon_20pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A5274D323EE1C3A00B10C45 /* icon_20pt.png */; };
+		8A5274E323EE1C3A00B10C45 /* icon_76pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A5274D423EE1C3A00B10C45 /* icon_76pt.png */; };
+		8A5274E423EE1C3A00B10C45 /* icon_76pt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A5274D523EE1C3A00B10C45 /* icon_76pt@2x.png */; };
+		8A5274E523EE1C3A00B10C45 /* icon_83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A5274D623EE1C3A00B10C45 /* icon_83.5@2x.png */; };
+		8A5274E623EE1C3A00B10C45 /* icon_29pt@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A5274D723EE1C3A00B10C45 /* icon_29pt@3x.png */; };
+		8A5274E723EE1C3A00B10C45 /* icon_60pt@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A5274D823EE1C3A00B10C45 /* icon_60pt@3x.png */; };
+		8A5274E823EE1C3A00B10C45 /* icon_60pt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A5274D923EE1C3A00B10C45 /* icon_60pt@2x.png */; };
+		8A5274E923EE1C3A00B10C45 /* icon_29pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A5274DA23EE1C3A00B10C45 /* icon_29pt.png */; };
+		8A5274EA23EE1C3A00B10C45 /* icon_29pt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A5274DB23EE1C3A00B10C45 /* icon_29pt@2x.png */; };
 		8A5715D923DCD82E0041B32C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5715D823DCD82E0041B32C /* AppDelegate.swift */; };
 		8A5715DB23DCD82E0041B32C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5715DA23DCD82E0041B32C /* SceneDelegate.swift */; };
 		8A5715DF23DCD82E0041B32C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A5715DE23DCD82E0041B32C /* Assets.xcassets */; };
@@ -70,6 +86,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A5274CA23EE0C2800B10C45 /* LocalImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalImage.swift; sourceTree = "<group>"; };
+		8A5274CD23EE1C3A00B10C45 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		8A5274CE23EE1C3A00B10C45 /* icon_40pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_40pt.png; sourceTree = "<group>"; };
+		8A5274CF23EE1C3A00B10C45 /* icon_20pt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_20pt@2x.png"; sourceTree = "<group>"; };
+		8A5274D023EE1C3A00B10C45 /* icon_40pt@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_40pt@3x.png"; sourceTree = "<group>"; };
+		8A5274D123EE1C3A00B10C45 /* icon_40pt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_40pt@2x.png"; sourceTree = "<group>"; };
+		8A5274D223EE1C3A00B10C45 /* icon_20pt@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_20pt@3x.png"; sourceTree = "<group>"; };
+		8A5274D323EE1C3A00B10C45 /* icon_20pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_20pt.png; sourceTree = "<group>"; };
+		8A5274D423EE1C3A00B10C45 /* icon_76pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_76pt.png; sourceTree = "<group>"; };
+		8A5274D523EE1C3A00B10C45 /* icon_76pt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_76pt@2x.png"; sourceTree = "<group>"; };
+		8A5274D623EE1C3A00B10C45 /* icon_83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_83.5@2x.png"; sourceTree = "<group>"; };
+		8A5274D723EE1C3A00B10C45 /* icon_29pt@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_29pt@3x.png"; sourceTree = "<group>"; };
+		8A5274D823EE1C3A00B10C45 /* icon_60pt@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_60pt@3x.png"; sourceTree = "<group>"; };
+		8A5274D923EE1C3A00B10C45 /* icon_60pt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_60pt@2x.png"; sourceTree = "<group>"; };
+		8A5274DA23EE1C3A00B10C45 /* icon_29pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_29pt.png; sourceTree = "<group>"; };
+		8A5274DB23EE1C3A00B10C45 /* icon_29pt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_29pt@2x.png"; sourceTree = "<group>"; };
 		8A5715D523DCD82E0041B32C /* supportyourpark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = supportyourpark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A5715D823DCD82E0041B32C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A5715DA23DCD82E0041B32C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +178,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A5274CC23EE1C3A00B10C45 /* appicon */ = {
+			isa = PBXGroup;
+			children = (
+				8A5274CD23EE1C3A00B10C45 /* Icon.png */,
+				8A5274CE23EE1C3A00B10C45 /* icon_40pt.png */,
+				8A5274CF23EE1C3A00B10C45 /* icon_20pt@2x.png */,
+				8A5274D023EE1C3A00B10C45 /* icon_40pt@3x.png */,
+				8A5274D123EE1C3A00B10C45 /* icon_40pt@2x.png */,
+				8A5274D223EE1C3A00B10C45 /* icon_20pt@3x.png */,
+				8A5274D323EE1C3A00B10C45 /* icon_20pt.png */,
+				8A5274D423EE1C3A00B10C45 /* icon_76pt.png */,
+				8A5274D523EE1C3A00B10C45 /* icon_76pt@2x.png */,
+				8A5274D623EE1C3A00B10C45 /* icon_83.5@2x.png */,
+				8A5274D723EE1C3A00B10C45 /* icon_29pt@3x.png */,
+				8A5274D823EE1C3A00B10C45 /* icon_60pt@3x.png */,
+				8A5274D923EE1C3A00B10C45 /* icon_60pt@2x.png */,
+				8A5274DA23EE1C3A00B10C45 /* icon_29pt.png */,
+				8A5274DB23EE1C3A00B10C45 /* icon_29pt@2x.png */,
+			);
+			path = appicon;
+			sourceTree = "<group>";
+		};
 		8A5715CC23DCD82E0041B32C = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +304,7 @@
 			children = (
 				8ADB11B123DE06FD00D18867 /* MapView.swift */,
 				8ADB11B223DE06FD00D18867 /* CircleImage.swift */,
+				8A5274CA23EE0C2800B10C45 /* LocalImage.swift */,
 			);
 			path = SupportingViews;
 			sourceTree = "<group>";
@@ -257,6 +312,7 @@
 		8ADB11BF23DE07AF00D18867 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8A5274CC23EE1C3A00B10C45 /* appicon */,
 				8A5821A423E5D2EA0044C150 /* parkDonationOptions.json */,
 				8AED846B23E1F319002A9380 /* supporter_patch.jpg */,
 				8ADB11C023DE07AF00D18867 /* turtlerock_feature.jpg */,
@@ -400,16 +456,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A5274E423EE1C3A00B10C45 /* icon_76pt@2x.png in Resources */,
 				8ADB11E023DE07B000D18867 /* stmarylake.jpg in Resources */,
 				8ADB11E123DE07B000D18867 /* chilkoottrail.jpg in Resources */,
+				8A5274E823EE1C3A00B10C45 /* icon_60pt@2x.png in Resources */,
+				8A5274DF23EE1C3A00B10C45 /* icon_40pt@3x.png in Resources */,
 				8ADB11D323DE07AF00D18867 /* charleyrivers.jpg in Resources */,
+				8A5274E623EE1C3A00B10C45 /* icon_29pt@3x.png in Resources */,
 				8ADB11DC23DE07AF00D18867 /* umbagog.jpg in Resources */,
 				8A5715E523DCD82E0041B32C /* LaunchScreen.storyboard in Resources */,
 				8ADB11D423DE07AF00D18867 /* turtlerock.jpg in Resources */,
 				8ADB11E323DE07B000D18867 /* rainbowlake.jpg in Resources */,
 				8ADB11DD23DE07AF00D18867 /* parks.json in Resources */,
+				8A5274DC23EE1C3A00B10C45 /* Icon.png in Resources */,
 				8A5715E223DCD82E0041B32C /* Preview Assets.xcassets in Resources */,
 				8AED846C23E1F319002A9380 /* supporter_patch.jpg in Resources */,
+				8A5274E723EE1C3A00B10C45 /* icon_60pt@3x.png in Resources */,
+				8A5274DE23EE1C3A00B10C45 /* icon_20pt@2x.png in Resources */,
 				8ADB11D923DE07AF00D18867 /* hiddenlake.jpg in Resources */,
 				8ADB11DA23DE07AF00D18867 /* twinlake.jpg in Resources */,
 				8ADB11D523DE07AF00D18867 /* silversalmoncreek.jpg in Resources */,
@@ -417,10 +480,18 @@
 				8ADB11D823DE07AF00D18867 /* lakemcdonald.jpg in Resources */,
 				8ADB11E223DE07B000D18867 /* stmarylake_feature.jpg in Resources */,
 				8ADB11DB23DE07AF00D18867 /* charleyrivers_feature.jpg in Resources */,
+				8A5274EA23EE1C3A00B10C45 /* icon_29pt@2x.png in Resources */,
 				8A5715DF23DCD82E0041B32C /* Assets.xcassets in Resources */,
 				8ADB11D723DE07AF00D18867 /* icybay.jpg in Resources */,
+				8A5274DD23EE1C3A00B10C45 /* icon_40pt.png in Resources */,
+				8A5274E123EE1C3A00B10C45 /* icon_20pt@3x.png in Resources */,
+				8A5274E023EE1C3A00B10C45 /* icon_40pt@2x.png in Resources */,
 				8ADB11DF23DE07AF00D18867 /* chincoteague.jpg in Resources */,
+				8A5274E223EE1C3A00B10C45 /* icon_20pt.png in Resources */,
+				8A5274E323EE1C3A00B10C45 /* icon_76pt.png in Resources */,
 				8ADB11D223DE07AF00D18867 /* turtlerock_feature.jpg in Resources */,
+				8A5274E523EE1C3A00B10C45 /* icon_83.5@2x.png in Resources */,
+				8A5274E923EE1C3A00B10C45 /* icon_29pt.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +543,7 @@
 				8ADB11A523DE05FD00D18867 /* UserData.swift in Sources */,
 				8AED846E23E203AF002A9380 /* DonationOption.swift in Sources */,
 				8ADB11A623DE05FD00D18867 /* Park.swift in Sources */,
+				8A5274CB23EE0C2800B10C45 /* LocalImage.swift in Sources */,
 				8ADB11AB23DE062400D18867 /* ParkList.swift in Sources */,
 				8A5715DB23DCD82E0041B32C /* SceneDelegate.swift in Sources */,
 				8ADB119E23DE05DF00D18867 /* CategoryRow.swift in Sources */,
@@ -649,6 +721,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"supportyourpark/Preview Content\"";
+				DEVELOPMENT_TEAM = 6V66CC3AN6;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = supportyourpark/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -668,6 +741,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"supportyourpark/Preview Content\"";
+				DEVELOPMENT_TEAM = 6V66CC3AN6;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = supportyourpark/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -687,6 +761,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6V66CC3AN6;
 				INFOPLIST_FILE = supportyourparkTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -708,6 +783,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6V66CC3AN6;
 				INFOPLIST_FILE = supportyourparkTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -808,7 +884,7 @@
 			repositoryURL = "https://github.com/MarcoEidinger/npsapi-swift";
 			requirement = {
 				kind = revision;
-				revision = 155da0c4fc12207c464c759a0a95215806236d77;
+				revision = 9a9eb44f6d608dc4c78703ed9c80dc3c3eb28c18;
 			};
 		};
 		8ADB11E623DE8EC900D18867 /* XCRemoteSwiftPackageReference "url-image" */ = {

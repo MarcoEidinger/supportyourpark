@@ -34,23 +34,31 @@ struct CategoryItem: View {
     var park: Park
     var body: some View {
         VStack(alignment: .leading) {
-            if park.imageURL != nil {
+            //if park.imageURL != nil {
+                Image("turtlerock")
+                    .renderingMode(.original)
+                                                .resizable()
+//                                                .frame(width: 155, height: 155)
+//                .clipShape(Circle())
+//                .overlay(Circle().stroke(Color.white, lineWidth: 4))
+//                .shadow(radius: 10)
                 // swiftlint:disable:next force_unwrapping
-                URLImage(park.imageURL!,
-                         delay: 0.10,
-                         processors: [ Resize(size: CGSize(width: 155.0, height: 155.0), scale: UIScreen.main.scale) ],
-                         content: {
-                            $0.image
-                                .renderingMode(.original)
-                                .resizable()
-                                .frame(width: 155, height: 155)
-                                .cornerRadius(5)
-                })
-                    .frame(width: 155.0, height: 155.0)
-            }
+//                URLImage(park.imageURL!,
+//                         delay: 0.10,
+//                         processors: [ Resize(size: CGSize(width: 155.0, height: 155.0), scale: UIScreen.main.scale) ],
+//                         content: {
+//                            $0.image
+//                                .renderingMode(.original)
+//                                .resizable()
+//                                .frame(width: 155, height: 155)
+//                                .cornerRadius(5)
+//                })
+//                    .frame(width: 155.0, height: 155.0)
+            //}
             Text(park.name)
                 .foregroundColor(.primary)
                 .font(.caption)
+                .lineLimit(0)
         }
         .padding(.leading, 15)
     }
