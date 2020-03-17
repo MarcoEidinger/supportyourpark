@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58A7C0623A95D8EA55D87F7F /* Pods_supportyourpark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AA972D95DF381E4CB9A9D68 /* Pods_supportyourpark.framework */; };
 		8A5274CB23EE0C2800B10C45 /* LocalImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5274CA23EE0C2800B10C45 /* LocalImage.swift */; };
 		8A5274DC23EE1C3A00B10C45 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A5274CD23EE1C3A00B10C45 /* Icon.png */; };
 		8A5274DD23EE1C3A00B10C45 /* icon_40pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A5274CE23EE1C3A00B10C45 /* icon_40pt.png */; };
@@ -31,7 +32,7 @@
 		8A5715F023DCD82F0041B32C /* supportyourparkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5715EF23DCD82F0041B32C /* supportyourparkTests.swift */; };
 		8A5715FB23DCD82F0041B32C /* supportyourparkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5715FA23DCD82F0041B32C /* supportyourparkUITests.swift */; };
 		8A5821A523E5D2EA0044C150 /* parkDonationOptions.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A5821A423E5D2EA0044C150 /* parkDonationOptions.json */; };
-		8ADB119923DE05AF00D18867 /* NatParkSwiftKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8ADB119823DE05AF00D18867 /* NatParkSwiftKit */; };
+		8ADB119923DE05AF00D18867 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 8ADB119823DE05AF00D18867 /* SwiftPackageProductDependency */; };
 		8ADB119D23DE05DF00D18867 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADB119B23DE05DF00D18867 /* Home.swift */; };
 		8ADB119E23DE05DF00D18867 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADB119C23DE05DF00D18867 /* CategoryRow.swift */; };
 		8ADB11A423DE05FD00D18867 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADB11A123DE05FD00D18867 /* Data.swift */; };
@@ -60,12 +61,14 @@
 		8ADB11E223DE07B000D18867 /* stmarylake_feature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8ADB11D023DE07AF00D18867 /* stmarylake_feature.jpg */; };
 		8ADB11E323DE07B000D18867 /* rainbowlake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8ADB11D123DE07AF00D18867 /* rainbowlake.jpg */; };
 		8ADB11E523DE2ABA00D18867 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADB11E423DE2ABA00D18867 /* SearchBar.swift */; };
-		8ADB11E823DE8EC900D18867 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 8ADB11E723DE8EC900D18867 /* URLImage */; };
+		8ADB11E823DE8EC900D18867 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 8ADB11E723DE8EC900D18867 /* SwiftPackageProductDependency */; };
 		8AED845E23E1B7DE002A9380 /* FeaturedParks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AED845D23E1B7DE002A9380 /* FeaturedParks.swift */; };
 		8AED846C23E1F319002A9380 /* supporter_patch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8AED846B23E1F319002A9380 /* supporter_patch.jpg */; };
 		8AED846E23E203AF002A9380 /* DonationOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AED846D23E203AF002A9380 /* DonationOption.swift */; };
 		8AED847023E214CB002A9380 /* ParkDonationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AED846F23E214CB002A9380 /* ParkDonationButton.swift */; };
 		8AED847A23E30430002A9380 /* GlobalMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AED847923E30430002A9380 /* GlobalMap.swift */; };
+		D2249C2492CBE0EA5A9C12D3 /* Pods_supportyourpark_supportyourparkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20B08F82006C12EB6B55989D /* Pods_supportyourpark_supportyourparkUITests.framework */; };
+		F1B8DA8073AC1191A5CF960B /* Pods_supportyourparkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D042F4AF73DEE9A5611509F /* Pods_supportyourparkTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +89,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F4D0B67972FE98E21864A09 /* Pods-supportyourpark-supportyourparkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-supportyourpark-supportyourparkUITests.debug.xcconfig"; path = "Target Support Files/Pods-supportyourpark-supportyourparkUITests/Pods-supportyourpark-supportyourparkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		20B08F82006C12EB6B55989D /* Pods_supportyourpark_supportyourparkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_supportyourpark_supportyourparkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39DD6239D32438BF36A87E49 /* Pods-supportyourparkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-supportyourparkTests.release.xcconfig"; path = "Target Support Files/Pods-supportyourparkTests/Pods-supportyourparkTests.release.xcconfig"; sourceTree = "<group>"; };
 		8A5274CA23EE0C2800B10C45 /* LocalImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalImage.swift; sourceTree = "<group>"; };
 		8A5274CD23EE1C3A00B10C45 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		8A5274CE23EE1C3A00B10C45 /* icon_40pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_40pt.png; sourceTree = "<group>"; };
@@ -116,6 +122,7 @@
 		8A5715FA23DCD82F0041B32C /* supportyourparkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = supportyourparkUITests.swift; sourceTree = "<group>"; };
 		8A5715FC23DCD82F0041B32C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A5821A423E5D2EA0044C150 /* parkDonationOptions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = parkDonationOptions.json; sourceTree = "<group>"; };
+		8AA972D95DF381E4CB9A9D68 /* Pods_supportyourpark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_supportyourpark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ADB119B23DE05DF00D18867 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		8ADB119C23DE05DF00D18867 /* CategoryRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		8ADB11A123DE05FD00D18867 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -149,6 +156,11 @@
 		8AED846D23E203AF002A9380 /* DonationOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationOption.swift; sourceTree = "<group>"; };
 		8AED846F23E214CB002A9380 /* ParkDonationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkDonationButton.swift; sourceTree = "<group>"; };
 		8AED847923E30430002A9380 /* GlobalMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalMap.swift; sourceTree = "<group>"; };
+		9D042F4AF73DEE9A5611509F /* Pods_supportyourparkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_supportyourparkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA1AE0815A94082195A0B7B2 /* Pods-supportyourparkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-supportyourparkTests.debug.xcconfig"; path = "Target Support Files/Pods-supportyourparkTests/Pods-supportyourparkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DCC4B78E0AD455BDF946ECB7 /* Pods-supportyourpark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-supportyourpark.debug.xcconfig"; path = "Target Support Files/Pods-supportyourpark/Pods-supportyourpark.debug.xcconfig"; sourceTree = "<group>"; };
+		E322DD12169C3EC375FA6522 /* Pods-supportyourpark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-supportyourpark.release.xcconfig"; path = "Target Support Files/Pods-supportyourpark/Pods-supportyourpark.release.xcconfig"; sourceTree = "<group>"; };
+		F09D28543C7FB561ABAEA8F5 /* Pods-supportyourpark-supportyourparkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-supportyourpark-supportyourparkUITests.release.xcconfig"; path = "Target Support Files/Pods-supportyourpark-supportyourparkUITests/Pods-supportyourpark-supportyourparkUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,8 +168,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8ADB11E823DE8EC900D18867 /* URLImage in Frameworks */,
-				8ADB119923DE05AF00D18867 /* NatParkSwiftKit in Frameworks */,
+				8ADB11E823DE8EC900D18867 /* BuildFile in Frameworks */,
+				8ADB119923DE05AF00D18867 /* BuildFile in Frameworks */,
+				58A7C0623A95D8EA55D87F7F /* Pods_supportyourpark.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +178,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1B8DA8073AC1191A5CF960B /* Pods_supportyourparkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,12 +186,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2249C2492CBE0EA5A9C12D3 /* Pods_supportyourpark_supportyourparkUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02C3D6987966B563664AF0F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DCC4B78E0AD455BDF946ECB7 /* Pods-supportyourpark.debug.xcconfig */,
+				E322DD12169C3EC375FA6522 /* Pods-supportyourpark.release.xcconfig */,
+				0F4D0B67972FE98E21864A09 /* Pods-supportyourpark-supportyourparkUITests.debug.xcconfig */,
+				F09D28543C7FB561ABAEA8F5 /* Pods-supportyourpark-supportyourparkUITests.release.xcconfig */,
+				AA1AE0815A94082195A0B7B2 /* Pods-supportyourparkTests.debug.xcconfig */,
+				39DD6239D32438BF36A87E49 /* Pods-supportyourparkTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8A5274CC23EE1C3A00B10C45 /* appicon */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +235,8 @@
 				8A5715EE23DCD82F0041B32C /* supportyourparkTests */,
 				8A5715F923DCD82F0041B32C /* supportyourparkUITests */,
 				8A5715D623DCD82E0041B32C /* Products */,
+				02C3D6987966B563664AF0F9 /* Pods */,
+				B081DA051FBD3F15CD25CA4B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -343,6 +373,16 @@
 			path = MapViews;
 			sourceTree = "<group>";
 		};
+		B081DA051FBD3F15CD25CA4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AA972D95DF381E4CB9A9D68 /* Pods_supportyourpark.framework */,
+				20B08F82006C12EB6B55989D /* Pods_supportyourpark_supportyourparkUITests.framework */,
+				9D042F4AF73DEE9A5611509F /* Pods_supportyourparkTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -350,6 +390,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A5715FF23DCD82F0041B32C /* Build configuration list for PBXNativeTarget "supportyourpark" */;
 			buildPhases = (
+				AC5FD429323A128F8039DDB3 /* [CP] Check Pods Manifest.lock */,
 				8A5715D123DCD82E0041B32C /* Sources */,
 				8A5715D223DCD82E0041B32C /* Frameworks */,
 				8A5715D323DCD82E0041B32C /* Resources */,
@@ -361,8 +402,8 @@
 			);
 			name = supportyourpark;
 			packageProductDependencies = (
-				8ADB119823DE05AF00D18867 /* NatParkSwiftKit */,
-				8ADB11E723DE8EC900D18867 /* URLImage */,
+				8ADB119823DE05AF00D18867 /* SwiftPackageProductDependency */,
+				8ADB11E723DE8EC900D18867 /* SwiftPackageProductDependency */,
 			);
 			productName = supportyourpark;
 			productReference = 8A5715D523DCD82E0041B32C /* supportyourpark.app */;
@@ -372,6 +413,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A57160223DCD82F0041B32C /* Build configuration list for PBXNativeTarget "supportyourparkTests" */;
 			buildPhases = (
+				86BFD17EB2FA1D8709D677FB /* [CP] Check Pods Manifest.lock */,
 				8A5715E723DCD82F0041B32C /* Sources */,
 				8A5715E823DCD82F0041B32C /* Frameworks */,
 				8A5715E923DCD82F0041B32C /* Resources */,
@@ -390,6 +432,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A57160523DCD82F0041B32C /* Build configuration list for PBXNativeTarget "supportyourparkUITests" */;
 			buildPhases = (
+				B9C8E4A2EC1561473A18FF82 /* [CP] Check Pods Manifest.lock */,
 				8A5715F223DCD82F0041B32C /* Sources */,
 				8A5715F323DCD82F0041B32C /* Frameworks */,
 				8A5715F423DCD82F0041B32C /* Resources */,
@@ -437,8 +480,8 @@
 			);
 			mainGroup = 8A5715CC23DCD82E0041B32C;
 			packageReferences = (
-				8ADB119723DE05AF00D18867 /* XCRemoteSwiftPackageReference "npsapi-swift" */,
-				8ADB11E623DE8EC900D18867 /* XCRemoteSwiftPackageReference "url-image" */,
+				8ADB119723DE05AF00D18867 /* RemoteSwiftPackageReference */,
+				8ADB11E623DE8EC900D18867 /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = 8A5715D623DCD82E0041B32C /* Products */;
 			projectDirPath = "";
@@ -512,6 +555,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		86BFD17EB2FA1D8709D677FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-supportyourparkTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8AED847723E293BF002A9380 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -528,6 +593,50 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		AC5FD429323A128F8039DDB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-supportyourpark-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9C8E4A2EC1561473A18FF82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-supportyourpark-supportyourparkUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -717,6 +826,7 @@
 		};
 		8A57160023DCD82F0041B32C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCC4B78E0AD455BDF946ECB7 /* Pods-supportyourpark.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -737,6 +847,7 @@
 		};
 		8A57160123DCD82F0041B32C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E322DD12169C3EC375FA6522 /* Pods-supportyourpark.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -757,6 +868,7 @@
 		};
 		8A57160323DCD82F0041B32C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA1AE0815A94082195A0B7B2 /* Pods-supportyourparkTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -779,6 +891,7 @@
 		};
 		8A57160423DCD82F0041B32C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39DD6239D32438BF36A87E49 /* Pods-supportyourparkTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -801,6 +914,7 @@
 		};
 		8A57160623DCD82F0041B32C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F4D0B67972FE98E21864A09 /* Pods-supportyourpark-supportyourparkUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -820,6 +934,7 @@
 		};
 		8A57160723DCD82F0041B32C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F09D28543C7FB561ABAEA8F5 /* Pods-supportyourpark-supportyourparkUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -879,7 +994,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		8ADB119723DE05AF00D18867 /* XCRemoteSwiftPackageReference "npsapi-swift" */ = {
+		8ADB119723DE05AF00D18867 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/MarcoEidinger/npsapi-swift";
 			requirement = {
@@ -887,7 +1002,7 @@
 				revision = 9a9eb44f6d608dc4c78703ed9c80dc3c3eb28c18;
 			};
 		};
-		8ADB11E623DE8EC900D18867 /* XCRemoteSwiftPackageReference "url-image" */ = {
+		8ADB11E623DE8EC900D18867 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
 			requirement = {
@@ -898,14 +1013,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		8ADB119823DE05AF00D18867 /* NatParkSwiftKit */ = {
+		8ADB119823DE05AF00D18867 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 8ADB119723DE05AF00D18867 /* XCRemoteSwiftPackageReference "npsapi-swift" */;
+			package = 8ADB119723DE05AF00D18867 /* RemoteSwiftPackageReference */;
 			productName = NatParkSwiftKit;
 		};
-		8ADB11E723DE8EC900D18867 /* URLImage */ = {
+		8ADB11E723DE8EC900D18867 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 8ADB11E623DE8EC900D18867 /* XCRemoteSwiftPackageReference "url-image" */;
+			package = 8ADB11E623DE8EC900D18867 /* RemoteSwiftPackageReference */;
 			productName = URLImage;
 		};
 /* End XCSwiftPackageProductDependency section */

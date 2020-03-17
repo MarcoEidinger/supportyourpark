@@ -1,7 +1,11 @@
 language: swift
 osx_image: xcode11.3
-xcode_project: supportyourpark.xcodeproj # path to your xcodeproj folder
+code_workspace: supportyourpark.xcworkspace
 xcode_scheme: supportyourpark
 xcode_destination: platform=iOS Simulator,name=iPhone 11,OS=13.3
+before_install:
+  - gem install cocoapods
+  - gem update concurrent-ruby
+  - pod setup
 after_success:
   - bash <(curl -s https://codecov.io/bash)
